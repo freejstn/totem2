@@ -5,7 +5,10 @@
 module.exports = async (client, message) => {
   // It's good practice to ignore other bots. This also makes your bot ignore itself
   // and not get into a spam loop (we call that "botception").
+  console.log(1)
   if (message.author.bot) return;
+  
+  
 
   // Grab the settings for this server from Enmap.
   // If there is no guild, get default conf (DMs)
@@ -15,6 +18,7 @@ module.exports = async (client, message) => {
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   if (message.content.match(prefixMention)) {
     return message.reply(`My prefix on this guild is \`${settings.prefix}\``);
+    console.log(2)
   }
 
   // Also good practice to ignore any message that does not start with our prefix,
@@ -47,7 +51,9 @@ module.exports = async (client, message) => {
     return message.channel.send("This command is unavailable via private message. Please run this command in a guild.");
 
   if (level < client.levelCache[cmd.conf.permLevel]) {
+    console.log(3)
     if (settings.systemNotice === "true") {
+      console.log(4)
       return message.channel.send(`You do not have permission to use this command.
   Your permission level is ${level} (${client.config.permLevels.find(l => l.level === level).name})
   This command requires level ${client.levelCache[cmd.conf.permLevel]} (${cmd.conf.permLevel})`);
