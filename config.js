@@ -1,6 +1,6 @@
 const config = {
   // Bot Owner, level 10 by default. A User ID. Should never be anything else than the bot owner's ID.
-  "ownerID": "123456789123456",
+  "ownerID": "232254618434797570",
 
   // Bot Admins, level 9 by default. Array of user ID strings.
   "admins": [],
@@ -17,13 +17,13 @@ const config = {
   // VIA COMMANDS IN THE GUILD.
   
   "defaultSettings" : {
-    "prefix": "-",
-    "modLogChannel": "mod-log",
-    "modRole": "Moderator",
-    "adminRole": "Administrator",
+    "prefix": "$",
+    "modLogChannel": "bot-log",
+    "modRole": "Shadow Verdancy",
+    "adminRole": "Verdancy",
     "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
-    "welcomeChannel": "welcome",
-    "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :D",
+    "welcomeChannel": "welcome-list",
+    "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :'D",
     "welcomeEnabled": "false"
   },
 
