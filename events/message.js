@@ -7,6 +7,7 @@ module.exports = async (client, message) => {
   // and not get into a spam loop (we call that "botception").
   console.log(1)
   if (message.author.bot) return;
+  console.log(5)
   
   
 
