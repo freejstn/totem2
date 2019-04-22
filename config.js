@@ -17,10 +17,10 @@ const config = {
   // VIA COMMANDS IN THE GUILD.
   
   "defaultSettings" : {
-    "prefix": "-",
+    "prefix": "$",
     "modLogChannel": "bot-log",
-    "modRole": "Verdancy",
-    "adminRole": "Shadow Verdancy",
+    "modRole": "Shadow Verdancy",
+    "adminRole": "Verdancy",
     "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
     "welcomeChannel": "welcome-list",
     "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :D",
