@@ -5,28 +5,26 @@
 module.exports = async (client, message) => {
   // It's good practice to ignore other bots. This also makes your bot ignore itself
   // and not get into a spam loop (we call that "botception").
-  console.log(1)
   if (message.author.bot) return;
-  console.log(5)
+  
   
   
 
   // Grab the settings for this server from Enmap.
   // If there is no guild, get default conf (DMs)
-  const settings = client.getSettings(message.guild);
-  console.log(6)
+  const settings = message.settings = client.getSettings(message.guild.id);
 
   // Checks if the bot was mentioned, with no message after it, returns the prefix.
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
-  console.log(7)
   if (message.content.match(prefixMention)) {
     return message.reply(`My prefix on this guild is \`${settings.prefix}\``);
-    console.log(2)
   }
+  console.log("yeet")
 
   // Also good practice to ignore any message that does not start with our prefix,
   // which is set in the configuration file.
   if (message.content.indexOf(settings.prefix) !== 0) return;
+  console.log("yote")
 
   // Here we separate our "command" name, and our "arguments" for the command.
   // e.g. if we have the message "+say Is this the real life?" , we'll get the following:
@@ -54,9 +52,7 @@ module.exports = async (client, message) => {
     return message.channel.send("This command is unavailable via private message. Please run this command in a guild.");
 
   if (level < client.levelCache[cmd.conf.permLevel]) {
-    console.log(3)
     if (settings.systemNotice === "true") {
-      console.log(4)
       return message.channel.send(`You do not have permission to use this command.
   Your permission level is ${level} (${client.config.permLevels.find(l => l.level === level).name})
   This command requires level ${client.levelCache[cmd.conf.permLevel]} (${cmd.conf.permLevel})`);
