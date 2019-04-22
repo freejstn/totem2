@@ -78,7 +78,7 @@ async function getHotPage(r, subreddit, after) {
 
 exports.conf = {
   enabled: true,
-  guildOnly: true,
+  guildOnly: false,
   aliases: ["countposts"],
   permLevel: "User",
   userCooldown: false,
