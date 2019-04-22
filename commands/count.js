@@ -81,7 +81,6 @@ exports.conf = {
   guildOnly: true,
   aliases: ["countposts"],
   permLevel: "User",
-  channelPerms: "Diplo",
   userCooldown: false,
   globalCooldown: true,
   cooldownDuration: 30
