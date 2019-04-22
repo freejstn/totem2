@@ -2,7 +2,7 @@ const { RichEmbed } = require('discord.js');
 
 exports.run = async (client, message, args, level) => {
     if (message.content.indexOf("{") === -1) {
-receivedMessage.react('👍').then(() => receivedMessage.react('👎').then(() => receivedMessage.react('🤷')));
+message.react('👍').then(() => message.react('👎').then(() => message.react('🤷')));
     } else {
         let firstBracket = message.content.indexOf("{");
         if (message.content.indexOf("}") === -1) {
