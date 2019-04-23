@@ -81,9 +81,9 @@ exports.conf = {
   guildOnly: false,
   aliases: ["countposts"],
   permLevel: "User",
-  userCooldown: false,
-  globalCooldown: true,
-  cooldownDuration: 30
+  //userCooldown: false,
+  //globalCooldown: true,
+  //cooldownDuration: 30
 };
 
 exports.help = {
