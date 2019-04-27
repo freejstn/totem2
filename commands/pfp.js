@@ -7,7 +7,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
   var embed = new RichEmbed()
             .setImage(url)
             .setColor('#68AD36')
-  let msg = await channel.send({ embed });
+  let msg = await message.channel.send({ embed });
 };
 
   //const let pfp = message.author.displayAvatarURL
