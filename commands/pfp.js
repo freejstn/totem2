@@ -3,7 +3,7 @@ const { RichEmbed } = require('discord.js');
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
 
   //if (message.content === -1) {
-  const url = message.mentions.members.first();
+  const url = message.author.avatarURL;
   //.indexOf("{")
   var embed = new RichEmbed()
             .setImage(url)
