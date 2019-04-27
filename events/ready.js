@@ -6,5 +6,5 @@ module.exports = async client => {
   client.logger.log(`${client.user.tag}, ready to serve ${client.users.size} users in ${client.guilds.size} servers.`, "ready");
 
   // Make the bot "play the game" which is the help command with default prefix.
-  client.user.setActivity("Version 2 is here! | $help", {type: "PLAYING"});
+  client.user.setActivity("v2.1 | $help", {type: "PLAYING"});
 };
