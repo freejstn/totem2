@@ -32,11 +32,10 @@ message.react('👍').then(() => message.react('👎').then(() => message.react(
         }
 
         var embed = new RichEmbed()
-            .setColor('#68AD36')
             .setTitle(title)
             .setDescription(optionsText)
             //.setAuthor(message.author.username, message.author.displayAvatarURL)
-            .setColor(0xC9DDFF)
+            .setColor('#68AD36')
             //.setTimestamp();
 
         let msg = await message.channel.send({ embed });
