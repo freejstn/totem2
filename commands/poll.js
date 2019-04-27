@@ -34,7 +34,7 @@ message.react('👍').then(() => message.react('👎').then(() => message.react(
         var embed = new RichEmbed()
             .setTitle(title)
             .setDescription(optionsText)
-            .setAuthor(message.author.username, message.author.displayAvatarURL)
+            //.setAuthor(message.author.username, message.author.displayAvatarURL)
             .setColor('#68AD36')
             //.setTimestamp();
 
