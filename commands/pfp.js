@@ -2,12 +2,23 @@ const { RichEmbed } = require('discord.js');
 
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
 
+  if (message.content.indexOf("{") === -1) {
   const url = message.author.avatarURL;
   
   var embed = new RichEmbed()
             .setImage(url)
             .setColor('#68AD36')
   let msg = await message.channel.send({ embed });
+  }
+  
+  else {
+    const otherUrl = message.mentions.members.first();
+  
+  var embed = new RichEmbed()
+            .setImage(otherUrl)
+            .setColor('#68AD36')
+  let msg = await message.channel.send({ embed });
+    
 };
 
   //const let pfp = message.author.displayAvatarURL
