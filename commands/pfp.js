@@ -18,6 +18,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
             .setImage(otherUrl)
             .setColor('#68AD36')
    let msg = await message.channel.send({ embed });
+  }
     
 };
 
