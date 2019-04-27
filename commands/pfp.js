@@ -1,5 +1,4 @@
 
-const { RichEmbed } = require('discord.js');
 const url = message.author.avatarURL;
 
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
