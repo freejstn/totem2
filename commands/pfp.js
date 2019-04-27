@@ -1,6 +1,6 @@
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
   //const let pfp = message.author.displayAvatarURL
-  const msg = await message.channel.send("Test", {files: ["http://test-ipv6.com/images/hires_ok.png"]});
+  const msg = await message.channel.send("Test", {files: [message.author.displayAvatarURL]});
 };
 //Looking good ;)
 
