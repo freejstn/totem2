@@ -39,6 +39,6 @@ exports.conf = {
 exports.help = {
   name: "pfp",
   category: "Miscelaneous",
-  description: "It sneaks up, takes a photo of you, and then gives it out.",
+  description: "It sneaks up and takes a photo of you before handing it out to strangers.",
   usage: "pfp @user"
 };
