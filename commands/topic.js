@@ -5,9 +5,9 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
   //let result = Math.floor((Math.random() * replies.length));
 
 //  let question = args.slice(1).join(" ");
-const msg = await message.channel.send("1 sec...");
+const msg = await message.channel.send(replies[result]);
 
-  msg.edit(replies);
+ // msg.edit(replies);
 //[result]
 
 }
