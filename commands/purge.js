@@ -1,4 +1,4 @@
-exports.run = (client, message, args) => {
+exports.run = async(client, message, args) => {
   const messagecount = parseInt(args.join(' '));
   message.channel.fetchMessages({
     limit: messagecount
