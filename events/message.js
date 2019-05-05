@@ -17,7 +17,7 @@ module.exports = async (client, message) => {
   // Checks if the bot was mentioned, with no message after it, returns the prefix.
   const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   if (message.content.match(prefixMention)) {
-    return message.reply("My prefix on this server is \`${settings.prefix}\` - try $help for more!");
+    return message.reply("My prefix on this server is" \`${settings.prefix}\` "- try $help for more!");
   }
 
   // Also good practice to ignore any message that does not start with our prefix,
