@@ -1,6 +1,6 @@
 exports.run = async(client, message, args) => {
    if (args.length > 0) {
-     message.channel.send()("Please define a number of messages to be yeeted");
+     message.channel.send("Please define a number of messages to be yeeted");
    }
   else {
   const messagecount = parseInt(args.join(' '));
