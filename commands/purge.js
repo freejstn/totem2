@@ -19,7 +19,7 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: [],
-  permLevel: "adminRole"
+  permLevel: "Administrator"
 };
 exports.help = {
   name: "purge",
