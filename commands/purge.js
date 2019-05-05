@@ -3,6 +3,10 @@ exports.run = (client, message, args) => {
   message.channel.fetchMessages({
     limit: messagecount
   }).then(messages => message.channel.bulkDelete(messages));
+  
+  const msg = await message.channel.send("Done.");
+  message.delete(5000);
+  
 };
 
 exports.conf = {
