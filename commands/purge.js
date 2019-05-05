@@ -5,7 +5,7 @@ exports.run = async(client, message, args) => {
   }).then(messages => message.channel.bulkDelete(messages));
   
   const msg = await message.channel.send("Done.");
-  message.delete(5000);
+  msg.delete(5000);
   
 };
 
