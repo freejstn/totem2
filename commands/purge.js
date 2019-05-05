@@ -18,7 +18,7 @@ exports.conf = {
 
 exports.help = {
   name: "purge",
-  category: "Test",
+  category: "Miscelaneous",
   description: "It yeets the X messages above the command",
   usage: "puge [number]"
 };
