@@ -86,6 +86,6 @@ exports.conf = {
 exports.help = {
   name: "poll",
   category: "Miscelaneous",
-  description: "Poll time!",
+  description: "The superior poll option",
   usage: "poll"
 };
