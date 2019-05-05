@@ -20,7 +20,7 @@ const config = {
   "defaultSettings" : {
     "prefix": "$",
     "modLogChannel": "bot-log",
-    "modRole": "Everygreen",
+    "modRole": "Evergreen",
     "adminRole": "Verdancy",
     "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
     "welcomeChannel": "welcome-list",
