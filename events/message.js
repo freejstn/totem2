@@ -19,6 +19,11 @@ module.exports = async (client, message) => {
   if (message.content.match(prefixMention)) {
     return message.reply(`My prefix on this server is \`${settings.prefix}\``);
   }
+  
+    if (message.isMentioned(555261669681659905)) {
+    message.reply('OwO');
+}
+});
 
   // Also good practice to ignore any message that does not start with our prefix,
   // which is set in the configuration file.
