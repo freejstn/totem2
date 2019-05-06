@@ -1,13 +1,14 @@
 exports.run = async(client, message, args) => {
 
-         message.channel.send("The messages have been *yeeted*");
+
 
    
    if (args.length > 0) {
      const messagecount = parseInt(args.join(' '));
        message.channel.fetchMessages({
       limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
-  
+            
+         message.channel.send("The messages have been *yeeted*");
          message.delete(1000);
 
 
