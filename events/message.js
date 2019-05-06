@@ -21,7 +21,7 @@ module.exports = async (client, message) => {
   }
   
   if (message.isMentioned(client.users.get('555261669681659905'))) {
-    return message.reply('OwO');
+    return message.react('<:suspeyes:565166220484280340>')
 }
 
 
