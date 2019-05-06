@@ -21,7 +21,7 @@ module.exports = async (client, message) => {
   }
   
     if (message.isMentioned(555261669681659905)) {
-    message.reply('OwO');
+    return message.reply('OwO');
 }
 
 
