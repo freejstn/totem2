@@ -21,7 +21,8 @@ module.exports = async (client, message) => {
   }
   
   if (message.isMentioned(client.users.get('555261669681659905'))) {
-    return message.react('<:suspeyes:565166220484280340>')
+    return message.react('565166220484280340')
+    console.log("Someone mentioned the totem")
 }
 
 
