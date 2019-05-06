@@ -9,7 +9,8 @@ exports.run = async(client, message, args) => {
       limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
             
          message.channel.send("The messages have been *yeeted*");
-         message.delete(1000);
+         message.delete(10000)
+
 
 
    }
