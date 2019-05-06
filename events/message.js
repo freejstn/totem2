@@ -20,7 +20,7 @@ module.exports = async (client, message) => {
     return message.reply(`My prefix on this server is \`${settings.prefix}\``);
   }
   
-    if (message.isMentioned(555261669681659905)) {
+  if (message.isMentioned(client.users.get('555261669681659905'))) {
     return message.reply('OwO');
 }
 
