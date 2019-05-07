@@ -10,9 +10,9 @@ exports.run = (client, message, args, level) => { // eslint-disable-line no-unus
 • Users      :: ${client.users.size.toLocaleString()}
 • Servers    :: ${client.guilds.size.toLocaleString()}
 • Channels   :: ${client.channels.size.toLocaleString()}
+• Beet       :: Is a weeb
 • Discord.js :: v${version}
-• Node       :: ${process.version}`, {code: "asciidoc"})
-"• Epic gamer moments       :: gotten"
+• Node       :: ${process.version}`, {code: "asciidoc"});
 };
 
 exports.conf = {
