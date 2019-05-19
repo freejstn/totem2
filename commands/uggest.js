@@ -7,7 +7,7 @@ var suggestChannelID = 529547120429236225;
 var suggestionCount = 0; //this will reset whenever the bot goes down, but it's cool so lmao
 
 client.channels.get("529547120429236225").send("Suggestion Number " + suggestionCount + ":" + arguments);
-    message.channel.delete();
+    message.delete();
     message.channel.author.send("Thank you for your Anonymous Suggestion!");
   
 
