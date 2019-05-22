@@ -22,7 +22,7 @@ exports.run = async (client, message, args, level) => {
             //.setImage("https://i.redd.it/5y6485007vt21.png");
         
             embed.addBlankField(true)
-                 .addField("💚 Thank you so much to the following:")
+                 .addField("💚 Thank you so so much to all the following:", ".")
                  .addField("Tilwaen", "For helping with, well, everything, really.")
                  .addField("Blastogypsy", "For helping make $poll.")
                  .addField("Sgedelta", "For creating $uggest and $report.")
