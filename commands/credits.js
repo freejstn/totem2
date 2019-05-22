@@ -24,11 +24,11 @@ exports.run = async (client, message, args, level) => {
             //embed.addBlankField(true)
                  //.addField("💚 Thank you so so much to all the following:", ".")
             embed.addField("Tilwaen", "For helping with, well, everything, really.")
-                 .addField("Blastogypsy", "For helping make $poll.")
-                 .addField("Sgedelta", "For creating $uggest and $report.")
+                 .addField("Blastogypsy", "For helping make `$poll` .")
+                 .addField("Sgedelta", "For creating `$uggest` and `$report` .")
                  .addField("201", "For helping with testing.")
                  .addField("BobbyTie", "For helping with testing.")
-                 .addField("201", "For helping with testing.")
+                 .addField("ReaIEIonMusk", "For helping with, uhhh *testing* .")        
                  .addField("HelicopterBallsack", "For naming the damned thing.")
 
         let msg = await message.channel.send({ embed });
