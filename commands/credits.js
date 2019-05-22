@@ -11,7 +11,7 @@ exports.run = async (client, message, args, level) => {
         
         var embed = new RichEmbed()
         
-            .setAuthor("===================== CREDITS =====================")
+            .setAuthor("=================== CREDITS ===================")
             .setTitle("Here's to all the madlads who helped make Scrotum Totem a reality")
             .setDescription("And thanks to you, for giving a reason to do this!")
        
