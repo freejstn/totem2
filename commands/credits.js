@@ -22,13 +22,14 @@ exports.run = async (client, message, args, level) => {
             //.setImage("https://i.redd.it/5y6485007vt21.png");
         
             embed.addBlankField(true)
-                 .addField("Tilwaen", "Helped with, well, everything, really.")
-                 .addField("Blastogypsy", "Helped make $poll.")
-                 .addField("Sgedelta", "Created $uggest and $report.")
-                 .addField("201", "Helped with testing.")
-                 .addField("BobbyTie", "Helped with testing.")
-                 .addField("201", "Helped with testing.")
-                 .addField("HelicopterBallsack", "Named the damn thing.")
+                 .addField("💚 Thank you so much to the following:")
+                 .addField("Tilwaen", "For helping with, well, everything, really.")
+                 .addField("Blastogypsy", "For helping make $poll.")
+                 .addField("Sgedelta", "For creating $uggest and $report.")
+                 .addField("201", "For helping with testing.")
+                 .addField("BobbyTie", "For helping with testing.")
+                 .addField("201", "For helping with testing.")
+                 .addField("HelicopterBallsack", "For naming the damned thing.")
 
         let msg = await message.channel.send({ embed });
         //return client.channels.get(voteresult.id).send({embed});
