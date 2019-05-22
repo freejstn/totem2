@@ -4,7 +4,7 @@ const { RichEmbed } = require('discord.js');
 exports.run = async (client, message, args, level) => {
         //message.delete(1000);
         const footerimage = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/185/green-heart_1f49a.png"
-        const authorImage = "https://imgur.com/IKzxH7y"
+        const authorImage = "//s.imgur.com/min/embed.js""
    
         
         
