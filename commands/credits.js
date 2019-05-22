@@ -51,7 +51,7 @@ exports.run = async (client, message, args, level) => {
 
 exports.help = {
   name: "credits",
-  category: "Miscelaneous",
+  category: "test",
   description: "Gives a list of credits",
   usage: "credits"
 };
