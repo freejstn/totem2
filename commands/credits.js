@@ -4,15 +4,18 @@ const { RichEmbed } = require('discord.js');
 exports.run = async (client, message, args, level) => {
         //message.delete(1000);
         const footerimage = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/185/green-heart_1f49a.png"
-       
+        const authorImage = "https://imgur.com/IKzxH7y"
+   
+        
+        
         var embed = new RichEmbed()
         
-            .setAuthor(client.username, client.displayAvatarURL)
-            .setTitle("Madlads who've helped make Scrotum Totem:")
-            //.setDescription("desc text")
+            //.setAuthor("Scrotum Totem", authorImage)
+            .setTitle("Ayy it's the credits")
+            .setDescription("Here are all the madlads who've helped make Scrotum Totem:")
        
-            //.setThumbnail("img")
-            .setFooter("Biggest of thanques", footerimage)
+            .setThumbnail(authorImage)
+            .setFooter(":  Biggest of thanques - you're all amazing", footerimage)
             .setColor('#68AD36')
             //.setTimestamp()
             //.setImage("https://i.redd.it/5y6485007vt21.png");
