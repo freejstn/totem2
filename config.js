@@ -26,6 +26,9 @@ const config = {
     "welcomeChannel": "welcome-list",
     "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :'D",
     "welcomeEnabled": "false"
+    "leaveChannel": "welcome-list",
+    "leaveMessage": "{{user}} has departed <:green_sad:579077850934542337>",
+    "leaveEnabled": "true"
   },
 
 
