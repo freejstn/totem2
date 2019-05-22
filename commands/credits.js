@@ -5,16 +5,17 @@ exports.run = async (client, message, args, level) => {
         //message.delete(1000);
         const footerimage = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/185/green-heart_1f49a.png"
         const authorImage = "https://i.ibb.co/MNPNWmQ/Screen-Shot-2019-05-22-at-8-51-50-PM.png"
+        const ballsImage = "https://i.ibb.co/WVjcXTd/scrotum-totem.jpg"
    
         
         
         var embed = new RichEmbed()
         
-            .setAuthor("_ _", authorImage)
+            .setAuthor(" ", authorImage)
             .setTitle("Ayy it's the credits...")
             .setDescription("Here are all the madlads who've helped make Scrotum Totem:")
        
-            .setThumbnail(authorImage)
+            .setThumbnail(ballsImage)
             .setFooter("Biggest of thanques to everyone who helped - you're all amazing", footerimage)
             .setColor('#68AD36')
             //.setTimestamp()
