@@ -22,8 +22,8 @@ exports.conf = {
 
 exports.help = {
   name: "uggest",
-  category: "Meme",
-  description: "suggest something",
+  category: "Important",
+  description: "Suggest something",
   usage: "uggest"
 };
 
