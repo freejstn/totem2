@@ -13,7 +13,7 @@ exports.run = async (client, message, args, level) => {
         
             .setAuthor("======================CREDITS======================")
             .setTitle("💚 Thank you so so much to all the following: 💚")
-            //.setDescription("And thanks to you, for giving a reason to do this!")
+            .setDescription("҉")
        
             .setThumbnail(ballsImage)
             .setFooter("Biggest of thanques to everyone who helped - you're all amazing", footerimage)
