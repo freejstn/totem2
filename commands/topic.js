@@ -21,7 +21,7 @@ exports.conf = {
 
 exports.help = {
   name: "topic",
-  category: "Meme",
+  category: "Miscelaneous",
   description: "Forces you to talk - at gunpoint.",
   usage: "topic"
 };
