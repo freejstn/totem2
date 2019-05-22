@@ -27,8 +27,7 @@ exports.run = async (client, message, args, level) => {
                  .addField("201", "Helped with testing")
                  .addField("BobbyTie", "Helped with testing")
                  .addField("201", "Helped with testing")
-                 .addField("ReaIEIonMusk", "Helped with... testing")
-                 .addField("HelicopterBallsack", "Named the thing")
+                 .addField("HelicopterBallsack", "Named the damn thing")
 
         let msg = await message.channel.send({ embed });
         //return client.channels.get(voteresult.id).send({embed});
