@@ -23,10 +23,10 @@ const config = {
     "modRole": "Evergreen",
     "adminRole": "Verdancy",
     "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
-    "welcomeChannel": "welcome-list",
+    "welcomeChannel": "539286672626679809",
     "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :'D",
-    "welcomeEnabled": "false"
-    "leaveChannel": "welcome-list",
+    "welcomeEnabled": "false",
+    "leaveChannel": "539286672626679809",
     "leaveMessage": "{{user}} has departed <:green_sad:579077850934542337>",
     "leaveEnabled": "true"
   },
