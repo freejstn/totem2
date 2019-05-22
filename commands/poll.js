@@ -85,7 +85,7 @@ exports.conf = {
 
 exports.help = {
   name: "poll",
-  category: "Miscelaneous",
+  category: "Important",
   description: "The superior poll option",
   usage: "poll"
 };
