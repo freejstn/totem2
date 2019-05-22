@@ -12,8 +12,8 @@ exports.run = async (client, message, args, level) => {
         var embed = new RichEmbed()
         
             .setAuthor("======================CREDITS======================")
-            .setTitle("A list of all the madlads who helped make Scrotum Totem a reality.")
-            .setDescription("And thanks to you, for giving a reason to do this!")
+            .setTitle("💚 Thank you so so much to all the following: 💚")
+            //.setDescription("And thanks to you, for giving a reason to do this!")
        
             .setThumbnail(ballsImage)
             .setFooter("Biggest of thanques to everyone who helped - you're all amazing", footerimage)
@@ -21,9 +21,9 @@ exports.run = async (client, message, args, level) => {
             //.setTimestamp()
             //.setImage("https://i.redd.it/5y6485007vt21.png");
         
-            embed.addBlankField(true)
-                 .addField("💚 Thank you so so much to all the following:", ".")
-                 .addField("Tilwaen", "For helping with, well, everything, really.")
+            //embed.addBlankField(true)
+                 //.addField("💚 Thank you so so much to all the following:", ".")
+            embed.addField("Tilwaen", "For helping with, well, everything, really.")
                  .addField("Blastogypsy", "For helping make $poll.")
                  .addField("Sgedelta", "For creating $uggest and $report.")
                  .addField("201", "For helping with testing.")
