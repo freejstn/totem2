@@ -4,13 +4,13 @@ const { RichEmbed } = require('discord.js');
 exports.run = async (client, message, args, level) => {
         //message.delete(1000);
         const footerimage = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/185/green-heart_1f49a.png"
-        const authorImage = "https://i.ibb.co/WVjcXTd/scrotum-totem.jpg"
+        const authorImage = "https://i.ibb.co/MNPNWmQ/Screen-Shot-2019-05-22-at-8-51-50-PM.png"
    
         
         
         var embed = new RichEmbed()
         
-            //.setAuthor("Scrotum Totem", authorImage)
+            .setAuthor("_ _", authorImage)
             .setTitle("Ayy it's the credits")
             .setDescription("Here are all the madlads who've helped make Scrotum Totem:")
        
