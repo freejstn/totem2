@@ -15,7 +15,7 @@ exports.run = async (client, message, args, level) => {
             .setDescription("Here are all the madlads who've helped make Scrotum Totem:")
        
             .setThumbnail(authorImage)
-            .setFooter(":  Biggest of thanques - you're all amazing", footerimage)
+            .setFooter("Biggest of thanques to everyone who helped - you're all amazing", footerimage)
             .setColor('#68AD36')
             //.setTimestamp()
             //.setImage("https://i.redd.it/5y6485007vt21.png");
