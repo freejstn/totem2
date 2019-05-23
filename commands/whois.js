@@ -29,7 +29,7 @@ exports.run = async (client, message, args, level, r, unbClient) => {
 
     // The Reddit account most probably won't match if the user doesn't have a nickname; send only Discord info
     if (!member.nickname) {
-        await message.channel.send(`User ${member.user.username} doesn't have a nickname - sending Discord info only.`);
+        //await message.channel.send(`User ${member.user.username} doesn't have a nickname - sending Discord info only.`);
         await sendDiscordEmbed(message.channel, member);
         return;
     }
