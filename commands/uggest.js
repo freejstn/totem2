@@ -3,8 +3,9 @@ const { RichEmbed } = require('discord.js');
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
 
         message.delete(1000);
-        const suggestion = message
+        const suggestion = args
         const suggestchannel = client.channels.get("529547120429236225")
+        const name = message.author.username "suggested"
         
         if (!suggestchannel) return message.reply('I cannot find the suggestions channel');
         //if (position.length < 1) return message.reply('You must supply a position for the person.');
@@ -13,9 +14,9 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
         //const embed = new Discord.RichEmbed()
         var embed = new RichEmbed()
             .setColor('#68AD36')
-            .setTitle("Suggested")
+            //.setTitle("Suggested")
             .setDescription(suggestion)
-            .setAuthor(message.author.username, message.author.displayAvatarURL)
+            .setAuthor(name, message.author.displayAvatarURL)
             //.setFooter(position)
             .setTimestamp();
 
