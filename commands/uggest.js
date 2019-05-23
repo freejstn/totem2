@@ -3,7 +3,7 @@ const { RichEmbed } = require('discord.js');
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
 
         message.delete(1000);
-        const suggestion = args
+        const suggestion = args.join(' ')
         const suggestchannel = client.channels.get("581061069250887690")
         const name = message.author.username + ' suggested'
         
