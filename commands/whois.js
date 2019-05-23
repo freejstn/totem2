@@ -105,7 +105,7 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: ["user", "info", "userinfo"],
-  permLevel: "User",
+  permLevel: "Greenie",
   channelPerms: "All",
   userCooldown: false,
   globalCooldown: false,
@@ -114,7 +114,7 @@ exports.conf = {
 
 exports.help = {
   name: "whois",
-  category: "Miscelaneous",
+  category: "Work in Progress",
   description: "Gives information about a user.",
   usage: "whois <user>"
 };
