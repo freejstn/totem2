@@ -1,3 +1,5 @@
+const { RichEmbed } = require('discord.js');
+
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
 
         message.delete(1000);
