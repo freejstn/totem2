@@ -4,7 +4,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
         const suggestion = message
         const suggestchannel = client.channels.get("529547120429236225")
         
-        if (!voteresult) return message.reply('I cannot find a voteresult channel');
+        if (!suggestchannel) return message.reply('I cannot find the suggestions channel');
         //if (position.length < 1) return message.reply('You must supply a position for the person.');
         if (suggestion < 1) return message.reply('No suggestion found').catch(console.error);
        
