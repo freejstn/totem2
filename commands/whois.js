@@ -45,7 +45,7 @@ exports.run = async (client, message, args, level, r, unbClient) => {
         redditUser = await r.getUser(username).fetch();
         userFlair = await r.getSubreddit('flairwars').getUserFlair(username);
     } catch (error) {
-        message.channel.send(`This is not a valid Reddit account: https://www.reddit.com/u/${username}; sending Discord info only.`);
+        //message.channel.send(`This is not a valid Reddit account: https://www.reddit.com/u/${username}; sending Discord info only.`);
         await sendDiscordEmbed(message.channel, member);
         return;
     };
