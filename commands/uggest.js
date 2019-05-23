@@ -1,14 +1,33 @@
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
 
-//vars
-var reportChannelName = 486578098217811978;
-var reportChannelID = 486578098217811978;
-var suggestChannelID = 529547120429236225;
-var suggestionCount = 0; //this will reset whenever the bot goes down, but it's cool so lmao
+        message.delete(1000);
+        const suggestion = message
+        const suggestchannel = client.channels.get("529547120429236225")
+        
+        if (!voteresult) return message.reply('I cannot find a voteresult channel');
+        //if (position.length < 1) return message.reply('You must supply a position for the person.');
+        if (suggestion < 1) return message.reply('No suggestion found').catch(console.error);
+       
+        //const embed = new Discord.RichEmbed()
+        var embed = new RichEmbed()
+            .setColor('#68AD36')
+            .setTitle("Suggested")
+            .setDescription(suggestion)
+            .setAuthor(message.author.username, message.author.displayAvatarURL)
+            //.setFooter(position)
+            .setTimestamp();
 
-client.channels.get("529547120429236225").send("Suggestion Number " + suggestionCount + ":" + args);
-    message.delete();
-    message.channel.author.send("Thank you for your Anonymous Suggestion!");
+   
+            
+
+        //let msg = await message.channel.send({ embed });
+        return client.channels.get(suggestchannel.id).send({embed});
+        
+};
+
+    //client.channels.get("529547120429236225").send("Suggestion Number " + suggestionCount + ":" + args);
+    //message.delete(1000);
+    //message.channel.author.send("Thank you for your Anonymous Suggestion!");
   
 
 };
@@ -17,12 +36,12 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: [],
-  permLevel: "User"
+  permLevel: "Greenie"
 };
 
 exports.help = {
   name: "uggest",
-  category: "Important",
+  category: "Work in progress",
   description: "Suggest something",
   usage: "uggest"
 };
