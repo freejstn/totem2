@@ -5,7 +5,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
         message.delete(1000);
         const suggestion = args
         const suggestchannel = client.channels.get("529547120429236225")
-        const name = message.author.username "suggested"
+        const name = message.author.username + 'suggested'
         
         if (!suggestchannel) return message.reply('I cannot find the suggestions channel');
         //if (position.length < 1) return message.reply('You must supply a position for the person.');
