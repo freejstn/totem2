@@ -64,21 +64,9 @@ async function sendDiscordEmbed(channel, discordMember) {
 }
 
 async function sendRedditUserEmbed(channel, username, flair, karma, redditAge, discordMember, sendRedditInfo) {
-    let colours = [
-        { name: "Red", imageUrl: "https://i.imgur.com/SChaKoz.jpg", colourHex: "#AF0303" },
-        { name: "Orange", imageUrl: "https://i.imgur.com/CewHt0f.png", colourHex: "#F99A0C" },
-        { name: "Yellow", imageUrl: "https://i.imgur.com/835G1zP.jpg", colourHex: "#FFE500" },
-        { name: "Green", imageUrl: "https://i.imgur.com/MNKwjES.jpg", colourHex: "#3ACE04" },
-        { name: "Blue", imageUrl: "https://i.imgur.com/8AJrVmx.png", colourHex: "#213AEF" },
-        { name: "Purple", imageUrl: "https://i.imgur.com/rZFSCIP.jpg", colourHex: "#AF0ECC" },
-        { name: "Mod", imageUrl: "https://i.imgur.com/Z0AM4lA.png", colourHex: "#C9DDFF" },
-        { name: "None", imageUrl: "https://i.imgur.com/dmJbwoN.png", colourHex: "#C9DDFF" }
-    ];
-
-    let colour = colours.find(colour => flair.includes(colour.name));
 
     var embed = new RichEmbed()
-        .setColor(colour.colourHex)
+        .setColor('#68AD36')
         .setTitle(discordMember.user.tag)
         .setThumbnail(discordMember.user.avatarURL)
         .setFooter("ID: " + discordMember.user.id)
