@@ -15,12 +15,12 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
         var embed = new RichEmbed()
             .setColor('#68AD36')
             //.setTitle("Suggested")
-            .setDescription(suggestion)
+            //.setDescription(suggestion)
             .setAuthor(name, message.author.displayAvatarURL)
             //.setFooter(position)
             .setTimestamp();
 
-   
+            embed.addField(suggestion)
             
 
         //let msg = await message.channel.send({ embed });
