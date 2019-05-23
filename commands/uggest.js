@@ -25,7 +25,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
 
         //let msg = await message.channel.send({ embed });
         return client.channels.get(suggestchannel.id).send({embed});
-        message.react('👍').then(() => message.react('👎').then(() => message.react('🤷')));
+        await message.react('👍').then(() => message.react('👎').then(() => message.react('🤷')));
         
 };
 
