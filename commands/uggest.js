@@ -8,6 +8,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
         const suggestion = args.join(' ')
         //get the channel id for the suggest channel and save it as a var
         const suggestchannel = client.channels.get("581061069250887690")
+        const discusschannel = client.channels.get("529547120429236225")
         //save the authors username as "name"
         const name = message.author.username + ' suggested'
         
@@ -24,11 +25,14 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
             .setTimestamp();
 
             //embed.addField(suggestion)
+        
+        let msg2 = client.channels.get(suggestchannel.id).send({embed})
+        message.channel.author.send("Thank you for your Suggestion!");        
             
         let msg = client.channels.get(suggestchannel.id).send({embed}).then(sentEmbed => {
         sentEmbed.react('👍').then(() => sentEmbed.react('👎').then(() => sentEmbed.react('🤷')));
                 
-        message.channel.author.send("Thank you for your Suggestion!");
+
 });
 };        
 
