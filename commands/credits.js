@@ -42,7 +42,7 @@ exports.run = async (client, message, args, level) => {
   enabled: true,
   guildOnly: false,
   aliases: [],
-  permLevel: "Greenie",
+  permLevel: "User",
   channelPerms: "All",
   userCooldown: false,
   globalCooldown: false,
