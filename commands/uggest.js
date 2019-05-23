@@ -47,7 +47,7 @@ exports.conf = {
 
 exports.help = {
   name: "uggest",
-  category: "Work in progress",
+  category: "Important",
   description: "Suggest something",
   usage: "uggest"
 };
