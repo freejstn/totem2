@@ -25,10 +25,11 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
 
         //let msg = await message.channel.send({ embed });
         //return client.channels.get(suggestchannel.id).send({embed});
-        let msg = client.channels.get(suggestchannel.id).send({embed});
-        await msg.react('👍').then(() => message.react('👎').then(() => message.react('🤷')));
+        let msg = client.channels.get(suggestchannel.id).send({embed}).then(sentEmbed => {
+sentEmbed.react('👍').then(() => message.react('👎').then(() => message.react('🤷')));
+})
         
-};
+
 
     //client.channels.get("529547120429236225").send("Suggestion Number " + suggestionCount + ":" + args);
     //message.delete(1000);
