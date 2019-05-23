@@ -52,6 +52,6 @@ exports.run = async (client, message, args, level) => {
 exports.help = {
   name: "credits",
   category: "Miscelaneous",
-  description: "Gives a list of credits",
+  description: "Gives a list of amazing people who've helped with this bot",
   usage: "credits"
 };
