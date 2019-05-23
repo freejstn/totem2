@@ -30,7 +30,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
     //message.channel.author.send("Thank you for your Anonymous Suggestion!");
   
 
-};
+
 
 exports.conf = {
   enabled: true,
