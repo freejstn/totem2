@@ -21,6 +21,7 @@ const config = {
     "prefix": "$",
     "modLogChannel": "bot-log",
     "modRole": "Evergreen",
+    "greenRole":"Greenie",
     "adminRole": "Verdancy",
     "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
     "welcomeChannel": "539286672626679809",
@@ -42,6 +43,25 @@ const config = {
       // level allows them to.
       check: () => true
     },
+    
+    
+        { level: 1,
+      // This is the name of the role.
+      name: "Greenie",
+      // The following lines check the guild the message came from for the roles.
+      // Then it checks if the member that authored the message has the role.
+      // If they do return true, which will allow them to execute the command in question.
+      // If they don't then return false, which will prevent them from executing the command.
+      check: (message) => {
+        try {
+          const greenRole = message.guild.roles.find(r => r.name.toLowerCase() === message.settings.greenRole.toLowerCase());
+          if (greenRole && message.member.roles.has(greenRole.id)) return true;
+        } catch (e) {
+          return false;
+        }
+      }
+},
+    
 
     // This is your permission level, the staff levels should always be above the rest of the roles.
     { level: 2,
