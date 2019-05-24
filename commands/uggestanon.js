@@ -41,6 +41,6 @@ exports.conf = {
 exports.help = {
   name: "uggestanon",
   category: "Important",
-  description: "Suggest something, but privately.",
+  description: "Suggest something, but anonymously.",
   usage: "uggestanon <suggestion>"
 };
