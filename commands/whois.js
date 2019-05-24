@@ -8,10 +8,6 @@ exports.run = async (client, message, args, level, r, unbClient) => {
     // No mention
     if (!member) {
         // Find the corresponding guild member nickname
-        /*guildMemberMatch = message.guild.members.find(m => {
-            // There needs to be a condition because the user doesn't need to have a nickname
-            if (m.nickname) m.nickname.toLowerCase().includes(args[0].toLowerCase())
-        });*/
         guildMemberMatch = message.guild.members
                 .filter(m => m.nickname)
                 .find(m => m.nickname.toLowerCase().includes(args[0].toLowerCase()));
@@ -93,7 +89,7 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: ["user", "info", "userinfo"],
-  permLevel: "Greenie",
+  permLevel: "User",
   channelPerms: "All",
   userCooldown: false,
   globalCooldown: false,
