@@ -7,6 +7,6 @@ epic.
 Big thanque to: https://github.com/Tilwaen/Tilbot
 and also big thanque to: https://github.com/AnIdiotsGuide/guidebot
 
-orginal version: https://github.com/KiwisGithub/totem
+Orginal version: https://github.com/KiwisGithub/totem
 
 
