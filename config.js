@@ -22,7 +22,7 @@ const config = {
     "modLogChannel": "bot-log",
     "modRole": "485066237529817088",
     "greenRole":"485067052592136204",
-    "adminRole": "485066170404438036",
+    "adminRole": 485066170404438036,
     "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
     "welcomeChannel": "539286672626679809",
     "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :'D",
