@@ -28,7 +28,8 @@ exports.run = async (client, message, args, level) => {
                  .addField("Sgedelta", "For creating `$uggest` and `$report` .")
                  .addField("201", "For helping with testing.")
                  .addField("BobbyTie", "For helping with testing.")
-                 .addField("ReaIEIonMusk", "For helping with, uhhh *testing* .")        
+                 .addField("Ritz", "For helping with testing.")
+                 .addField("Pixlion", "For helping with testing.")
                  .addField("HelicopterBallsack", "For naming the damned thing.")
 
         let msg = await message.channel.send({ embed });
