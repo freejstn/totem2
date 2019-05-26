@@ -10,7 +10,7 @@ module.exports = async (client, message) => {
     if (message.channel.id === "581987386121125929") {
   
     //if message in 371441117687709697 send a message to 575434603607621695 in the server 521856622998323202
-    await client.guilds.get("485065547503894562").channels.get("485065548187828244").send(message.content)
+    await client.guilds.get("485065547503894562").channels.get("485065967152660481").send(message.content)
     
 }
   
