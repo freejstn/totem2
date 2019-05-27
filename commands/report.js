@@ -25,7 +25,6 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
             embed.addField("For:", reportMessage)
         
         let msg = client.channels.get(reportchannel.id).send({embed});
-});
 };        
 
 exports.conf = {
