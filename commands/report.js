@@ -25,7 +25,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
             embed.addField("For:", reportMessage)
         
         let msg = client.channels.get(reportchannel.id).send({embed});
-        client.channels.get("486578098217811978").send("<!@485066042813710360>")
+        client.channels.get("486578098217811978").send("<@&485066042813710360>")
         
 };        
 
