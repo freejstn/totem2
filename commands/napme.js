@@ -18,8 +18,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "snapme",
+  name: "napme",
   category: "Memes",
   description: "Snaps you or Spares you",
-  usage: "snapme"
+  usage: "napme"
 };
