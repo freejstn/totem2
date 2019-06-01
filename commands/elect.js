@@ -1,5 +1,5 @@
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
-  msg.react('584174141737926666');
+  message.react('584174141737926666');
 };
 
 exports.conf = {
