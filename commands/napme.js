@@ -9,7 +9,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
  message.react('584174001547640852')
  .then(() => message.react('584174001199251506'))
  .then(() =>  msg.edit(replies[result]))
- .then(() => message.react('584174001128210442'));
+ .then(() => msg.react('584174001128210442'));
   //const msg = await message.channel.send(replies[result]).then(() => msg.react('584174001128210442');
 
 };
