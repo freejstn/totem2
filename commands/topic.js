@@ -17,7 +17,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
                  "Which color would create the most chaos if it was suddenly merged with Green?", 
                  "If you could plant a spy in any colours government, who would you choose and which colour?", 
                  "What is the best psychological test to determine how much of a weeb someone is?",
-                "Is my mother ever going to return,or has she abandoned me for good"];
+                 "If I had a dolar for every warcrime Green has commited, how rich would I be?"];
   let result = Math.floor((Math.random() * replies.length));
 
   //  let question = args.slice(1).join(" ");
