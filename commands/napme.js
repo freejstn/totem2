@@ -1,6 +1,17 @@
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
  
- const name = message.author.username
+     var name;
+ if (args.length > 0) {
+        if (message.mentions.members.first()) {
+             name = message.mentions.members.first().user.avatarURL;
+        } else {
+            message.channel.send()("There is no mention");
+            return;
+        }
+    } else {
+          name = message.author.username
+}
+
   
  let replies = [" has been Snapped.", " has been Spared."];
  let result = Math.floor((Math.random() * replies.length));
