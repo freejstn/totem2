@@ -1,12 +1,13 @@
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
  
+ const name = message.author.username
   
- let replies = ["You have been Snapped.", "You have been Spared."];
+ let replies = [" has been Snapped.", " has been Spared."];
  let result = Math.floor((Math.random() * replies.length));
 
  const msg = await message.channel.send("***SNAP***");
  
- message.react('584174001547640852')
+ message.react(name, '584174001547640852')
  .then(() => message.react('584174001199251506'))
  .then(() =>  msg.edit(replies[result]))
  .then(() => msg.react('584174001128210442'));
