@@ -7,7 +7,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
  const msg = await message.channel.send("***SNAP***");
  
  msg.react('584174001547640852')
- .then(() => msg.react('584174001199251506')));
+ .then(() => msg.react('584174001199251506'));
  
  msg.edit(replies[result]);
   //const msg = await message.channel.send(replies[result]).then(() => msg.react('584174001128210442');
