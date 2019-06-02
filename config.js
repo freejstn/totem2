@@ -20,9 +20,9 @@ const config = {
   "defaultSettings" : {
     "prefix": "$",
     "modLogChannel": "bot-log",
-    "modRole": "Athens",
-    "greenRole":"Blueie",
-    "adminRole": "Synedrion",
+    "modRole": "Evergeen",
+    "greenRole":"Greenie",
+    "adminRole": "Verdancy",
     "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
     "welcomeChannel": "539286672626679809",
     "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :'D",
