@@ -34,8 +34,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "napme",
+  name: "nap",
   category: "Memes",
-  description: "Snaps you or Spares you",
-  usage: "napme"
+  description: "Snaps you or Spares you and your loved ones",
+  usage: "nap <@user>"
 };
