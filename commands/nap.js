@@ -3,7 +3,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
      var name;
  if (args.length > 0) {
         if (message.mentions.members.first()) {
-             name = message.mentions.username;
+             name = message.mentions.members.first();
         } else {
             message.channel.send()("There is no mention");
             return;
