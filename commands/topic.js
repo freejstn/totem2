@@ -3,7 +3,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
   
   let replies = ["What are the magic numbers on your parents credit card?", 
                  "On a scale of 1-10, how much of a weeb are you?", 
-                 "Where did you hide the bodies?", 
+                 "Where is a good place to hide some bodies?", 
                  "On a scale of `The best` to `Better than the best` how much of a great supreme is Kiwi?", 
                  "How do I hide multiple Orange coprses?", 
                  "That Malice kid is pretty trash, amight?", 
@@ -17,7 +17,8 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
                  "Which color would create the most chaos if it was suddenly merged with Green?", 
                  "If you could plant a spy in any colours government, who would you choose and which colour?", 
                  "What is the best psychological test to determine how much of a weeb someone is?",
-                 "If I had a dolar for every warcrime Green has commited, how rich would I be?"];
+                 "If I had a dolar for every warcrime Green has commited, how rich would I be?"
+                 "Why?"];
   let result = Math.floor((Math.random() * replies.length));
 
   //  let question = args.slice(1).join(" ");
