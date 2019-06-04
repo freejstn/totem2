@@ -52,7 +52,7 @@ exports.run = async (client, message, args, level) => {
 
 exports.help = {
   name: "credits",
-  category: "Miscelaneous",
+  category: "Miscellaneous",
   description: "Gives a list of amazing people who've helped with this bot",
   usage: "credits"
 };
