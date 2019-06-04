@@ -3,17 +3,15 @@ const { RichEmbed } = require('discord.js');
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
         
         //delete the users message after 1000ms
-        message.delete(1000);
-        
+        message.delete(1000);      
        
         var embed = new RichEmbed()
             .setColor('#68AD36')
             .setTitle("Voting begain at:")
             .setTimestamp();
 
-        
         let msg = await message.channel.send({ embed });
-});
+
 };        
 
 exports.conf = {
