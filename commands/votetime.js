@@ -24,8 +24,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "timecheck",
+  name: "votetime",
   category: "Important",
   description: "Check the time (at point of the command being posted)",
-  usage: "timecheck"
+  usage: "votetime"
 };
