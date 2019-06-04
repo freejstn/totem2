@@ -7,7 +7,7 @@ exports.run = async (client, message, args, level) => { // eslint-disable-line n
        
         var embed = new RichEmbed()
             .setColor('#68AD36')
-            .setTitle("Voting begain at:")
+            .setTitle("Voting began at:")
             .setTimestamp();
 
         let msg = await message.channel.send({ embed });
